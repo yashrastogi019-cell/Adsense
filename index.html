@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Randoms Online — AI Tools, Software Reviews & Productivity Tips</title>
+  <meta name="description" content="Discover the best AI tools, software reviews, productivity tips, and how-to guides. Expert comparisons to help you choose the right tech in 2025.">
+  <meta name="keywords" content="AI tools, software reviews, productivity tips, tech comparisons, best AI tools 2025">
+  <meta name="author" content="Randoms Online">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://randoms.online/">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Randoms Online — AI Tools, Software Reviews & Productivity Tips">
+  <meta property="og:description" content="Discover the best AI tools, software reviews, productivity tips, and how-to guides.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://randoms.online/">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Randoms Online — Your Guide to the Best Tech">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Randoms Online",
+    "url": "https://randoms.online/",
+    "description": "AI Tools, Software Reviews & Productivity Tips",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://randoms.online/blog/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script src="js/theme.js"></script>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="/" class="logo">⚡ Randoms Online</a>
+      <nav class="nav-links" id="nav-links">
+        <a href="/" class="active">Home</a>
+        <a href="blog/">Blog</a>
+        <a href="ai-tools/">AI Tools</a>
+        <a href="software-reviews/">Software</a>
+        <a href="productivity/">Productivity</a>
+        <a href="how-to/">How-To</a>
+        <a href="comparisons/">Comparisons</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-badge"><span class="dot"></span> Your guide to smarter tech</div>
+        <h1>Discover the Best <span class="gradient-text">AI Tools</span> &amp; Software</h1>
+        <p>Expert reviews, in-depth comparisons, and actionable productivity tips — helping you choose the right technology in 2025 and beyond.</p>
+        <div style="display:flex;gap:var(--space-md);flex-wrap:wrap;">
+          <a href="blog/" class="btn btn-primary">Explore Articles →</a>
+          <a href="about/" class="btn btn-secondary">About Randoms Online</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED ARTICLE ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured</h2>
+        </div>
+        <div class="grid">
+          <a href="articles/best-ai-writing-tools-2025/" class="card card-featured animate-in">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80" alt="AI Writing Tools" class="card-image" loading="lazy">
+            <div class="card-body">
+              <span class="card-category cat-ai">AI Tools</span>
+              <h3 class="card-title">Best AI Writing Tools in 2025: ChatGPT vs Claude vs Gemini</h3>
+              <p class="card-excerpt">We tested every major AI writing assistant head-to-head. From creative writing to code generation, here's which tool comes out on top — and which one is right for your specific needs.</p>
+              <div class="card-meta">
+                <span>May 1, 2025</span>
+                <span class="read-time">📖 12 min read</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LATEST ARTICLES ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Latest Articles</h2>
+          <a href="blog/" class="view-all">View All →</a>
+        </div>
+
+        <div class="category-pills">
+          <button class="pill active" onclick="filterCards('all')">All</button>
+          <button class="pill" onclick="filterCards('ai')">AI Tools</button>
+          <button class="pill" onclick="filterCards('software')">Software</button>
+          <button class="pill" onclick="filterCards('productivity')">Productivity</button>
+          <button class="pill" onclick="filterCards('howto')">How-To</button>
+          <button class="pill" onclick="filterCards('compare')">Comparisons</button>
+        </div>
+
+        <div class="grid grid-3" id="articles-grid">
+
+          <a href="articles/top-ai-image-generators/" class="card animate-in" data-cat="ai">
+            <img src="https://images.unsplash.com/photo-1686191128892-3b37add4c844?w=600&q=80" alt="AI Image Generators" class="card-image" loading="lazy">
+            <div class="card-body">
+              <span class="card-category cat-ai">AI Tools</span>
+              <h3 class="card-title">Top 10 AI Image Generators Compared (Free & Paid)</h3>
+              <p class="card-excerpt">From Midjourney to DALL-E 3 to Stable Diffusion — which AI image generator creates the best visuals? We tested them all.</p>
+              <div class="card-meta"><span>Apr 28, 2025</span><span class="read-time">📖 10 min</span></div>
+            </div>
+          </a>
+
+          <a href="articles/best-ai-code-assistants/" class="card animate-in" data-cat="ai">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80" alt="AI Code Assistants" class="card-image" loading="lazy">
+            <div class="card-body">
+              <span class="card-category cat-ai">AI Tools</span>
+              <h3 class="card-title">Best AI Code Assistants for Developers in 2025</h3>
+              <p class="card-excerpt">GitHub Copilot, Cursor, Codeium, and more — which AI coding assistant actually helps you ship faster?</p>
+              <div class="card-meta"><span>Apr 25, 2025</span><span class="read-time">📖 11 min</span></div>
+            </div>
+          </a>
+
+          <a href="articles/best-project-management-software/" class="card animate-in" data-cat="software">
+            <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&q=80" alt="Project Management" class="card-image" loading="lazy">
+            <div class="card-body">
+              <span class="card-category cat-software">Software Reviews</span>
+              <h3 class="card-title">Best Project Management Software for Remote Teams</h3>
+              <p class="card-excerpt">Asana, Monday.com, ClickUp, or Notion? We compare the top PM tools for distributed teams in 2025.</p>
+              <div class="card-meta"><span>Apr 22, 2025</span><span class="read-time">📖 9 min</span></div>
+            </div>
+          </a>
+
+          <a href="articles/ai-save-time-at-work/" class="card animate-in" data-cat="productivity">
+            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&q=80" alt="Productivity AI" class="card-image" loading="lazy">
+            <div class="card-body">
+              <span class="card-category cat-productivity">Productivity</span>
+              <h3 class="card-title">How to Use AI to Save 2 Hours Every Day at Work</h3>
+              <p class="card-excerpt">Practical, tested strategies to automate repetitive tasks and reclaim your most productive hours using AI.</p>
+              <div class="card-meta"><span>Apr 20, 2025</span><span class="read-time">📖 8 min</span></div>
+            </div>
+          </a>
+
+          <a href="articles/notion-vs-obsidian-vs-roam/" class="card animate-in" data-cat="compare">
+            <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?w=600&q=80" alt="Note Taking Apps" class="card-image" loading="lazy">
+            <div class="card-body">
+              <span class="card-category cat-compare">Comparisons</span>
+              <h3 class="card-title">Notion vs Obsidian vs Roam — Which Note-Taking App Wins?</h3>
+              <p class="card-excerpt">Three of the biggest names in personal knowledge management go head to head in our comprehensive review.</p>
+              <div class="card-meta"><span>Apr 18, 2025</span><span class="read-time">📖 13 min</span></div>
+            </div>
+          </a>
+
+          <a href="articles/google-analytics-4-setup/" class="card animate-in" data-cat="howto">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80" alt="Google Analytics Setup" class="card-image" loading="lazy">
+            <div class="card-body">
+              <span class="card-category cat-howto">How-To</span>
+              <h3 class="card-title">How to Set Up Google Analytics 4 in 2025 (Step-by-Step)</h3>
+              <p class="card-excerpt">The definitive step-by-step guide to setting up GA4, configuring events, and getting actionable data from your website.</p>
+              <div class="card-meta"><span>Apr 15, 2025</span><span class="read-time">📖 10 min</span></div>
+            </div>
+          </a>
+
+          <a href="articles/best-vpn-services-2025/" class="card animate-in" data-cat="software">
+            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&q=80" alt="VPN Services" class="card-image" loading="lazy">
+            <div class="card-body">
+              <span class="card-category cat-software">Software Reviews</span>
+              <h3 class="card-title">Best VPN Services in 2025 — Tested and Reviewed</h3>
+              <p class="card-excerpt">We tested the top VPNs for speed, privacy, and streaming performance. NordVPN, ExpressVPN, Surfshark compared.</p>
+              <div class="card-meta"><span>Apr 12, 2025</span><span class="read-time">📖 11 min</span></div>
+            </div>
+          </a>
+
+          <a href="articles/best-browser-extensions/" class="card animate-in" data-cat="productivity">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&q=80" alt="Browser Extensions" class="card-image" loading="lazy">
+            <div class="card-body">
+              <span class="card-category cat-productivity">Productivity</span>
+              <h3 class="card-title">Top Browser Extensions That Will 10x Your Productivity</h3>
+              <p class="card-excerpt">The essential Chrome and Firefox extensions that power users and professionals swear by in 2025.</p>
+              <div class="card-meta"><span>Apr 10, 2025</span><span class="read-time">📖 7 min</span></div>
+            </div>
+          </a>
+
+          <a href="articles/mac-vs-windows-developers/" class="card animate-in" data-cat="compare">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&q=80" alt="Mac vs Windows" class="card-image" loading="lazy">
+            <div class="card-body">
+              <span class="card-category cat-compare">Comparisons</span>
+              <h3 class="card-title">Mac vs Windows for Developers: Full 2025 Comparison</h3>
+              <p class="card-excerpt">Which operating system is better for software development? We break down the pros, cons, and hidden costs.</p>
+              <div class="card-meta"><span>Apr 8, 2025</span><span class="read-time">📖 14 min</span></div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="newsletter animate-in">
+          <h3>Stay Ahead of the Curve</h3>
+          <p>Get our weekly roundup of the latest AI tools, software deals, and productivity tips — straight to your inbox.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+            <input type="email" placeholder="Enter your email address" required id="newsletter-email">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="stats-row">
+          <div class="stat-item animate-in">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Tools Reviewed</div>
+          </div>
+          <div class="stat-item animate-in">
+            <div class="stat-number">20+</div>
+            <div class="stat-label">In-Depth Guides</div>
+          </div>
+          <div class="stat-item animate-in">
+            <div class="stat-number">100K+</div>
+            <div class="stat-label">Monthly Readers</div>
+          </div>
+          <div class="stat-item animate-in">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Comparisons</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo">⚡ Randoms Online</a>
+          <p>Your trusted guide to the best AI tools, software, and digital productivity tips. Making technology work for you.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <a href="ai-tools/">AI Tools</a>
+          <a href="software-reviews/">Software Reviews</a>
+          <a href="productivity/">Productivity</a>
+          <a href="how-to/">How-To Guides</a>
+          <a href="comparisons/">Comparisons</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about/">About Us</a>
+          <a href="contact/">Contact</a>
+          <a href="blog/">All Articles</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="privacy-policy/">Privacy Policy</a>
+          <a href="terms/">Terms & Conditions</a>
+          <a href="disclaimer/">Disclaimer</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Randoms Online. All rights reserved.</span>
+        <span>Made with ⚡ for tech enthusiasts</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Category filter
+    function filterCards(cat) {
+      document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+      event.target.classList.add('active');
+      document.querySelectorAll('#articles-grid .card').forEach(card => {
+        if (cat === 'all' || card.dataset.cat === cat) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
